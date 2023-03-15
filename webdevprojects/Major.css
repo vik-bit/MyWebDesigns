@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+}
+.displaymsg{
+    color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+   
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 10%;
+    
+}
+.but{
+    margin-top: 1%;
+    cursor: pointer;
+}
+.but:hover{
+    background-color: green;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(116042.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-blend-mode: color;
+    
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 30%;
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    
+    color: white;
+    
+}
+
+.navbar img{
+    float: left;
+    width: 5%;
+    height: 5%;    
+}
+.container2{
+   
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    background-color: black;
+   
+}
+.item1{
+    color: white;
+    background-color: cyan;
+    border-radius: 1rem;
+}
+
+
+.item1 img{
+    float: left;
+    width:  9rem;
+    height: 9rem;
+    object-fit: cover;  /* V.imp for a product list */
+    cursor: pointer;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    
+}
+.item2{
+    width: 50%;
+    z-index: 2;
+}
+.item2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.contact{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   color: greenyellow;
+    margin-top: 5%;
+}

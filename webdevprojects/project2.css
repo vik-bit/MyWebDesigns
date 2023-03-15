@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    height: 100%;
+    width: 100%;
+}
+.item{
+    position: relative;
+    float: left;
+    list-style: none;
+    
+    text-align: center;
+}
+#item-4{
+    font-family: 'MonteCarlo', cursive;
+    font-size: 250%;
+    font-weight: bold;
+    align-items: center;
+    
+}

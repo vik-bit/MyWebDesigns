@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+  
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+  }
+.container{
+    display: grid;
+    grid-template-rows: repeat(7);
+    grid-gap: 0;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position: sticky;
+   top: 0;
+   background-color: #006600;
+   color: black;
+   width: 100%;
+   height: 2rem;
+}
+
+.part1{
+    float: left;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    
+    height: inherit;
+}
+.subitem{
+    float: left;
+    display: flex;
+    
+    cursor: pointer;
+   
+    height: 100%;
+    
+    width: 100%;
+    
+}
+.subitem > img{
+    
+    height: 1rem;
+}
+.subitem2{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+    height: inherit;
+    padding: 1%;
+    width: 100%;
+}
+.subitem2 > button{
+    height: inherit;
+    width: 6rem;
+}
+.subitem2 > img{
+    height: 1rem;
+}
+#logo{
+    height: 2rem;
+    width: 6rem;
+    
+}
+#phone{
+    visibility: collapse;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    width: 40%;
+    
+    height: inherit;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 30%;
+    height: inherit;
+    
+}
+#phone1{
+    margin-top: 1%;
+}
+.item button{
+    background-color: grey;
+    
+    color: black;
+    width: 15%;
+    height: 1.5rem;
+    cursor: pointer;
+    float: right;
+}
+.item input{
+    width: 80%;
+    
+}
+
+
+
+
+.welcome{
+    background-image: url(https://images.unsplash.com/photo-1579579778611-ac38b712bd4a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlYWRpbmclMjBib29rfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    width: 102%;
+    height: 21rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    
+
+}
+.welcome > h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+    text-decoration: black;
+    border: #006600;
+    display: block;
+    height: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+.welcome > button {
+   
+    width: 11rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: red;
+    margin-right: 1rem;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+
+}
+.news{
+    display: grid;
+    width: 100%;
+    height: 15rem;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-areas: "main main content content"
+                         "main main content content"
+                         "main main content content"
+                         "main main content content";
+    grid-gap:0.2rem;
+
+         
+}
+#item1{
+    width: inherit;
+    height: inherit;
+
+    background-image: url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFjYm9va3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    grid-area: main;
+}
+#item1 > h3{
+    position: relative;
+    width: 99%;
+    top: 65%;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+#item2{
+    height: inherit;
+    align-items: center;
+    color: black;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background-color: whitesmoke;
+    
+    grid-area: content;
+    ;
+}
+#subalign1{
+    background-image: url(https://static.toiimg.com/thumb/resizemode-4,msid-86095746,imgsize-42504,width-400/86095746.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#subalign3{
+    background-image: url(https://static.toiimg.com/thumb/resizemode-4,msid-86158602,imgsize-406671,width-400/86158602.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#subalign5{
+    background-image: url(https://static.toiimg.com/thumb/resizemode-4,msid-86160590,imgsize-6844,width-400/86160590.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.subalign1{
+    background-color: blue;
+    height: 4rem;
+    width: 8rem;
+}
+.subalign2{
+    
+    background-color: white;
+    text-align: left;
+    word-wrap: break-word;
+    height: 4rem;
+    width: 31rem;
+}
+.subalign2 >h5{
+    word-wrap: break-word;
+}
+
+.subitem-{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: inherit;
+    
+}
+#subitem1{
+    
+    background-color: white;
+
+}
+#subitem2{
+    background-color: white;
+}
+#subitem3{
+    background-color: white;
+    
+}
+@media screen and (min-width:800px) and (max-width:1500px) {
+    #phone1{
+        visibility: collapse;
+    }
+}
+@media screen and (max-width:600px) and (min-width:200px)  {
+    
+    .item input{
+        visibility: collapse;
+
+    }
+    .subalign2{
+        width: 10rem;
+    }
+    #item1{
+        width: 145%;
+    }
+    #item2{
+        margin-top: 8%;
+        min-width: 300px;
+    }
+    .news{
+        max-width: 600px;
+        min-width: 600px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "main"
+        "content";
+        grid-gap: 0.2rem;
+    }
+    .subalign2{
+        
+        grid-auto-flow: column;
+    }
+    
+    #phone1{
+        margin-top: 0.5rem;
+    }
+    #phone{
+        visibility: visible;
+        padding-right: rem;
+        height: 1rem;
+        width: 1rem;
+    }
+    .subitem{
+        min-width: 57vh;
+    }
+    .subitem2 > img{
+        visibility: collapse;
+    }
+    .subitem2 > button{
+        float: right;
+    }
+    #phone2{
+      visibility: collapse;
+    }
+    
+}
+.product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aquamarine;
+    height: 25rem;
+}
+.productlist{
+    background-color: blue;
+    height: 21rem;
+    width: 13rem;
+    text-align: center;
+    border-radius: 2rem;
+
+
+}
+.image{
+    background-color: teal;
+    height: 50%;
+    background-image: url(https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fcdn.elearningindustry.com%2Fwp-content%2Fuploads%2F2016%2F05%2Ftop-10-books-every-college-student-read-1024x640.jpeg&sp=1631869890T037936d19f1a76a7dc56897dbeb21a290a9a49be7756c7294ab59b6e2e5919f3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+    width: inherit;
+}
+.writeup{
+    background-color: whitesmoke;
+    box-shadow: black;
+    word-wrap: break-word;
+    height: 50%;
+    width: 100%;
+    border-radius: inherit;
+}
+.foot{
+    background-color: black;
+    height: 5rem;
+    color: white;
+    cursor: pointer;
+    position: sticky;
+    top: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.foot :hover{
+  transform: translate(-180px);
+}
+@media screen and (max-width:600px) and (min-width:200px) {
+    .container{
+        display: flex;
+        flex-flow: column;
+    }
+    .product{
+        margin-top: 90%;
+        height:100rem;
+    }
+    .foot{
+    background-color: black;
+    height: 10rem;
+   
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+   
+}
+
+@media screen and (min-width:800px) and (max-width:1500px) {
+    .product{
+        height: 50rem;
+    }
+    .foot{
+        background-color: black;
+        height: 15rem;
+       
+        color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+}
+
